@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        function call(num) {
+            //Empty array to hold the pushed values from
+            //if statements
+            arr = [];
+            //iterates from 1 to given parameter
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 === 0 && i % 3 === 0 && i % 5 === 0) {
+                    arr.push("yu-gi-oh");
+                }
+                if (i % 2 === 0 && i % 3 === 0) {
+                    arr.push("yu-gi");
+                }
+                if (i % 2 === 0 && i % 5 === 0) {
+                    arr.push("yu-oh");
+                }
+                if (i % 3 === 0 && i % 5 === 0) {
+                    arr.push("gi-oh");
+                }
+                if (i % 2 === 0) {
+                    arr.push("yu");
+                }
+                if (i % 3 === 0) {
+                    arr.push("gi");
+                }
+                if (i % 5 === 0) {
+                    arr.push("oh");
+                }
+            }
+            return arr;
+        }
+        console.log(call(100))
+    </script>
+</body>
+
+</html>
